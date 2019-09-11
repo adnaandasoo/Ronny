@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ronny Meghairouni</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+  <script src="lightbox-plus-jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+
+  <!------------- nav starts here ---------------->
+
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="images/ronnylogo.png"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Intro</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a id="button" href="#">Contact Me</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!------------- nav ends here ------------------>
+
+  <!------------- modal starts here -------------->
+
+  <div class="bg-modal">
+    <div class="modal-contents animated zoomIn">
+
+      <div class="close">+</div>
+      <h3>Contact me</h3>
+      <a class="mail" href="mailto:ronnymphotos@gmail.com">ronnymphotos@gmail.com</a>
+      <div class="icons">
+        <a href="https://www.instagram.com/picsbyron2019/?hl=en" target="_blank" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-user"></a>
+        <a href="https://www.facebook.com/ronny.meghairouni" target="_blank" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </div>
+
+  <!------------- modal ends here ---------------->
+
+  <!------------- title starts here ---------------->
+
+  <h1 class="title">ronny</h1>
+
+  <!------------- title ends here ---------------->
+
+    <!------------- photo gallery stars here ---------------->
+
+    <div class="row">
+      <div class="column">
+        <a href="images/Ambulance 1.jpg" data-lightbox="mygallery"><img src="images/Ambulance 1.jpg"></a>
+        <a href="images/Ambulance 2.jpg" data-lightbox="mygallery"><img src="images/Ambulance 2.jpg"></a>
+        <a href="images/American Flag DE.jpg" data-lightbox="mygallery"><img src="images/American Flag DE.jpg"></a>
+        <a href="images/rain.jpg" data-lightbox="mygallery"><img src="images/rain.jpg"></a>
+        <a href="images/Plane.jpg" data-lightbox="mygallery"><img src="images/Plane.jpg"></a>
+      </div>
+      <div class="column">
+        <a href="images/Butterfly.jpg" data-lightbox="mygallery"><img src="images/Butterfly.jpg"></a>
+        <a href="images/Clock_Tower.jpg" data-lightbox="mygallery"><img src="images/Clock_Tower.jpg"></a>
+        <a href="images/Flowers1.jpg" data-lightbox="mygallery"><img src="images/Flowers1.jpg"></a>
+        <a href="images/Flowers2.jpg" data-lightbox="mygallery"><img src="images/Flowers2.jpg"></a>
+        <a href="images/Issa_Mak.jpg" data-lightbox="mygallery"><img src="images/Issa_Mak.jpg"></a>
+      </div>
+      <div class="column">
+        <a href="images/Holy1.png" data-lightbox="mygallery"><img src="images/Holy1.png"></a>
+        <a href="images/Holy2.jpg" data-lightbox="mygallery"><img src="images/Holy2.jpg"></a>
+        <a href="images/Tree.jpg" data-lightbox="mygallery"><img src="images/Tree.jpg"></a>
+        <a href="images/Beach Flag.jpg" data-lightbox="mygallery"><img src="images/Beach Flag.jpg"></a>
+      </div>
+      <div class="column">
+        <a href="images/Issa_Mak2.jpg" data-lightbox="mygallery"><img src="images/Issa_Mak2.jpg"></a>
+        <a href="images/Light1.jpg" data-lightbox="mygallery"><img src="images/Light1.jpg"></a>
+        <a href="images/Light2.jpg" data-lightbox="mygallery"><img src="images/Light2.jpg"></a>
+        <a href="images/Pear.jpg" data-lightbox="mygallery"><img src="images/Pear.jpg"></a>
+        <a href="images/Sun.png" data-lightbox="mygallery"><img src="images/Sun.png"></a>
+      </div>
+    </div>
+
+    <!------------- photo gallery ends here ---------------->
+
+
+  <!------------- preloader starts here ---------------->
+
+  <div class="loader-wrapper">
+    <div class="spinner">
+      <div style="background-color: #FF3232;" class="rect1"></div>
+      <div style="background-color: #0F9D58;" class="rect2"></div>
+      <div style="background-color: #ffcb0c;" class="rect3"></div>
+      <div style="background-color: #3498db;" class="rect4"></div>
+      <div style="background-color: #003366;" class="rect5"></div>
+    </div>
+  </div>
+  <script>
+    $(window).on("load", function() {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+
+  <!------------- preloader ends here ---------------->
+
+  <script type="text/javascript">
+    TweenMax.from(".logo", 1, {
+      delay: .5,
+      y: 10,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".burger", 1, {
+      delay: 1,
+      y: 100,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".title", 1, {
+      delay: 2,
+      y: 10,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".row", 1, {
+      delay: 2.3,
+      y: 50,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom("nav li a", 1, {
+      delay: 1,
+      y: 30,
+      opacity: 0,
+      ease: Expo.easeInOut
+    }, 0.1);
+  </script>
+
+  <script src="app.js"></script>
+  <script src="modal.js"></script>
+</body>
+
+</html>
